@@ -1,0 +1,19 @@
+﻿@using WebApp.Models;
+@model Department
+@{
+    ViewBag.Title = "DepartmentDetails";
+}
+
+<h2>Department Details</h2>
+
+<div class="table table-striped">
+    <div class="row">
+        <div class="col-md-6"><b>Department Id</b></div>
+        <div class="col-md-6"><b>Department Name</b></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">@Model.Id</div>
+        <div class="col-md-6">@Model.Name</div>
+    </div>
+</div>

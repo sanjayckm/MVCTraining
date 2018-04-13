@@ -1,0 +1,23 @@
+﻿@using WebApp.Models;
+@model List<Employee>
+
+@{
+    ViewBag.Title = "AllEmployees";
+}
+
+<h2>Employee List</h2>
+
+<div class="table table-striped">
+    <div class="row">
+        <div class="col-md-6"><b>Employee Id</b></div>
+        <div class="col-md-6"><b>Employee Name</b></div>
+    </div>
+
+    @foreach (var d in Model)
+    {
+        <div class="row">
+            <div class="col-md-6">@d.Id</div>
+            <div class="col-md-6">@d.Name</div>
+        </div>
+    }
+</div>

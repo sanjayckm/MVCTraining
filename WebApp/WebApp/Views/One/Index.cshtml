@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<ul class="nav flex-column nav-pills">
+    <li class="nav-item active">@Html.ActionLink("Home", "Index", "One")</li>
+    <li class="nav-item">@Html.ActionLink("String Output", "StringOutput", "One")</li>
+    <li class="nav-item">@Html.ActionLink("Content Output", "ContentOutput", "One")</li>
+    <li class="nav-item">@Html.ActionLink("View Output", "ViewOutput", "One")</li>
+    <li class="nav-item">@Html.ActionLink("ViewByName()", "ViewByName", "One")</li>
+    <li class="nav-item">@Html.ActionLink("ViewByName(ViewOutput)", "ViewByName", "One", new { name = "ViewOutput" }, null)</li>
+</ul>

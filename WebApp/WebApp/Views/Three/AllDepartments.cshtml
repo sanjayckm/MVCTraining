@@ -1,0 +1,22 @@
+﻿@using WebApp.Models;
+@model List<Department>
+@{
+    ViewBag.Title = "All Departments";
+}
+
+<h2>Department List</h2>
+
+<div class="table table-striped">
+    <div class="row">
+        <div class="col-md-6"><b>Department Id</b></div>
+        <div class="col-md-6"><b>Department Name</b></div>
+    </div>
+
+    @foreach (var d in Model)
+    {
+        <div class="row">
+            <div class="col-md-6">@d.Id</div>
+            <div class="col-md-6">@Html.ActionLink(d.Name, "DepartmentDetails", "Three", new { id = d.Id }, null)</div>
+        </div>
+    }
+</div>

@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@using (Html.BeginForm("Get", "Two", FormMethod.Post))
+{    
+    <ul class="nav flex-column nav-pills">
+        <li class="nav-item active">@Html.ActionLink("Home", "Index", "Two")</li>
+        <li class="nav-item">@Html.ActionLink("Get (HttpGet)", "Get", "Two")</li>
+        <li class="nav-item">@Html.ActionLink("Get (HttpPost)", "", null, new { @id = "submit" })</li>
+    </ul>
+    <br /><br />
+    <p><span>Name: </span> @Html.TextBox("name")</p>
+}
+
+@section scripts{
+    <script type="text/javascript">
+        $("#submit").click(function () {
+            document.forms[0].submit();
+            return false;
+        });
+    </script>
+}
