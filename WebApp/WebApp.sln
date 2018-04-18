@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFExampleOne", "EFExampleOn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessOne", "DataAccessOne\DataAccessOne.csproj", "{D27C1090-A4CA-48EC-9F10-09CE1428397E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFExampleTwo", "EFExampleTwo\EFExampleTwo.csproj", "{06B45704-FD96-4E24-8D69-8B98EC212D92}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D27C1090-A4CA-48EC-9F10-09CE1428397E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D27C1090-A4CA-48EC-9F10-09CE1428397E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D27C1090-A4CA-48EC-9F10-09CE1428397E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06B45704-FD96-4E24-8D69-8B98EC212D92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06B45704-FD96-4E24-8D69-8B98EC212D92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06B45704-FD96-4E24-8D69-8B98EC212D92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06B45704-FD96-4E24-8D69-8B98EC212D92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
