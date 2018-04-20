@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessOne", "DataAccess
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFExampleTwo", "EFExampleTwo\EFExampleTwo.csproj", "{06B45704-FD96-4E24-8D69-8B98EC212D92}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityOne", "IdentityOne\IdentityOne.csproj", "{9D6A2AC1-6FA9-497C-8567-5E8B77CDACF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiOne", "WebApiOne\WebApiOne.csproj", "{26DD0D21-19C6-4F51-AA1E-9ED8EC1170CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{06B45704-FD96-4E24-8D69-8B98EC212D92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06B45704-FD96-4E24-8D69-8B98EC212D92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06B45704-FD96-4E24-8D69-8B98EC212D92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D6A2AC1-6FA9-497C-8567-5E8B77CDACF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D6A2AC1-6FA9-497C-8567-5E8B77CDACF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D6A2AC1-6FA9-497C-8567-5E8B77CDACF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D6A2AC1-6FA9-497C-8567-5E8B77CDACF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26DD0D21-19C6-4F51-AA1E-9ED8EC1170CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26DD0D21-19C6-4F51-AA1E-9ED8EC1170CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26DD0D21-19C6-4F51-AA1E-9ED8EC1170CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26DD0D21-19C6-4F51-AA1E-9ED8EC1170CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

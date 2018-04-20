@@ -1,0 +1,61 @@
+﻿@model EFExampleTwo.DataAccess.DataModels.Student
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<h3>Form 1</h3>
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        @Html.Label("StudentId", new { @for = "StudentId" })    
+        @Html.DisplayText("Some Text") <!-- Does not display anything. Use DisplayFor/DisplayTextFor -->
+    </div>
+    <div class="form-group">
+        @Html.Label("StudentName")
+        @Html.TextBox("Student Name", Model.StudentName, new { @class = "form-control" })
+        <small id="nameHelp" class="form-text text-muted">Mandatory Field</small>
+    </div>
+}
+
+<h3>Form 2</h3>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+    <div class="form-group">
+        @Html.DisplayNameFor(m => m.StudentId)
+        @Html.DisplayFor(x => x.StudentId)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.StudentName, new { @for = "StudentName" })
+        @Html.TextBoxFor(m => m.StudentName, new { @class = "form-control" })        
+        <small id="nameHelp" class="form-text text-muted">Mandatory Field</small>
+        @Html.ValidationMessageFor(m => m.StudentName)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(x => x.DateOfJoin)
+        @Html.TextBoxFor(x => x.DateOfJoin, new { @class = "FormControl" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(x => x.IsAdmitted)
+        @Html.CheckBoxFor(x => x.IsAdmitted, new { @class = "FormControl" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(x => x.Gender)
+        @Html.RadioButton("Gender", "Male") Male
+        @Html.RadioButton("Gender", "Female") Female
+    </div>  
+    
+    <div class="form-group">
+        @Html.ActionLink("Submit using Action Link", "Create", null, new { @class = "btn btn-default" })
+        <button type="submit" class="btn btn-info">Submit Button</button>
+    </div>
+
+    @Html.Hidden("ClientId", "Crimpson");
+}
+
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
